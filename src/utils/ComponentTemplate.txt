@@ -1,0 +1,4 @@
+import * as React from 'react'
+import { getSvgComponent } from '../../utils/GetSvgComponent'
+
+export default getSvgComponent({ filteredPaths: {{{filteredExtractedPaths}}}, contentPaths: {{{contentExtractedPaths}}}})
