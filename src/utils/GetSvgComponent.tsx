@@ -6,10 +6,12 @@ interface ProductLineSvgComponentProps {
   contentPaths?: JSX.Element
 }
 
-export const getSvgComponent = ({ filteredPaths, contentPaths }: ProductLineSvgComponentProps) => {
+const getSvgComponent = ({ filteredPaths, contentPaths }: ProductLineSvgComponentProps) => {
   const Component = (props: React.SVGProps<SVGSVGElement>) => (
     <ProductLineSvgComponent {...props} filteredPaths={filteredPaths} contentPaths={contentPaths} />
   )
 
   return React.memo(Component)
 }
+
+export default getSvgComponent

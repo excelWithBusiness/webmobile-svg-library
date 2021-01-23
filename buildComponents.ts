@@ -93,7 +93,7 @@ export async function extractPaths(data: string) {
  */
 export const getProductLineComponent = async (
   fileData: string,
-  _outputFileDir: string,
+  outputFileDir: string,
   svgPath: string,
   componentTemplate: string
 ) => {
@@ -192,8 +192,10 @@ export const buildComponents = async (options: BuildOptions) => {
     svgPath: string,
     callback: (svgPath: string, outputFilePath: string) => void
   ) {
-    const outputFilePath = await worker(svgPath, componentTemplate, options, prettierConfig)
-    callback(svgPath, outputFilePath)
+    if (svgPath) {
+      const outputFilePath = await worker(svgPath, componentTemplate, options, prettierConfig)
+      callback(svgPath, outputFilePath)
+    }
   },
   8)
   q.push(svgPaths, (path?: string | null, outputFilePath?: string) => {

@@ -1,0 +1,1 @@
+{"version":3,"file":"GetSvgComponent.d.ts","sourceRoot":"","sources":["../../src/utils/GetSvgComponent.tsx"],"names":[],"mappings":"AAAA,OAAO,KAAK,MAAM,OAAO,CAAA;AAGzB,UAAU,4BAA4B;IACpC,aAAa,EAAE,GAAG,CAAC,OAAO,CAAA;IAC1B,YAAY,CAAC,EAAE,GAAG,CAAC,OAAO,CAAA;CAC3B;AAED,QAAA,MAAM,eAAe,oCAAqC,4BAA4B,uCAC1D,MAAM,QAAQ,CAAC,aAAa,CAAC,iBAKxD,CAAA;AAED,eAAe,eAAe,CAAA"}

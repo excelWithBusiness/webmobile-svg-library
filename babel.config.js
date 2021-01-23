@@ -4,11 +4,19 @@ module.exports = function (api) {
     [
       '@babel/preset-env',
       {
-        modules: false,
+        modules: process.env.BABEL_ENV === 'build' ? false : 'auto',
+        targets: {
+          node: 'current',
+        },
       },
     ],
     '@babel/preset-typescript',
-    ['@babel/preset-react'],
+    [
+      '@babel/preset-react',
+      {
+        development: process.env.BABEL_ENV !== 'build',
+      },
+    ],
   ]
   return {
     presets,
