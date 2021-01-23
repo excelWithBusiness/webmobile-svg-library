@@ -1,5 +1,5 @@
 {
-  "name": "webmobile-svg-library",
+  "name": "@excelwithbusiness/webmobile-svg-library",
   "version": "0.0.5",
   "description": "A lib that holds all the SVGs and corresponding react components.",
   "license": "UNLICENSED",
