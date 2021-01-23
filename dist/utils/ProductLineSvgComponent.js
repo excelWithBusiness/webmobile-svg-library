@@ -1,11 +1,11 @@
 import * as React from 'react';
 import { useContext } from 'react';
 import { ThemeContext } from 'styled-components';
-export var ProductLineSvgComponent = function ProductLineSvgComponent(props) {
-  var _useContext = useContext(ThemeContext),
-      name = _useContext.name;
-
-  var pathProps = {
+export const ProductLineSvgComponent = props => {
+  const {
+    name
+  } = useContext(ThemeContext);
+  const pathProps = {
     Filtered: props.filteredPaths,
     Content: props.contentPaths
   };

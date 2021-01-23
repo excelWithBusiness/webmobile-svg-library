@@ -4,7 +4,6 @@ module.exports = {
   moduleDirectories: ['node_modules', '<rootDir>/src/'],
   testURL: 'http://localhost',
   testEnvironment: 'node',
-  setupFiles: ['<rootDir>/node_modules/regenerator-runtime/runtime'],
   transform: {
     '^.+\\.tsx?$': ['babel-jest', { cwd: __dirname, configFile: './babel-jest.config.json' }],
   },

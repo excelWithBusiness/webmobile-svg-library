@@ -2,17 +2,18 @@ function _extends() { _extends = Object.assign || function (target) { for (var i
 
 import React from 'react';
 import { ProductLineSvgComponent } from './ProductLineSvgComponent';
-export var getSvgComponent = function getSvgComponent(_ref) {
-  var filteredPaths = _ref.filteredPaths,
-      contentPaths = _ref.contentPaths;
 
-  var Component = function Component(props) {
-    return React.createElement(ProductLineSvgComponent, _extends({}, props, {
-      filteredPaths: filteredPaths,
-      contentPaths: contentPaths
-    }));
-  };
+const getSvgComponent = ({
+  filteredPaths,
+  contentPaths
+}) => {
+  const Component = props => React.createElement(ProductLineSvgComponent, _extends({}, props, {
+    filteredPaths: filteredPaths,
+    contentPaths: contentPaths
+  }));
 
   return React.memo(Component);
 };
+
+export default getSvgComponent;
 //# sourceMappingURL=GetSvgComponent.js.map

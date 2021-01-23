@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { getSvgComponent } from '../../utils/GetSvgComponent'
+import getSvgComponent from '../../../src/utils/GetSvgComponent'
 
 export default getSvgComponent({
   filteredPaths: (
