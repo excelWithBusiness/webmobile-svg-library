@@ -1,8 +1,12 @@
 {
-  "name": "webmobile-svg-library",
+  "name": "@excelwithbusiness/webmobile-svg-library",
   "version": "0.0.7",
   "description": "A lib that holds all the SVGs and corresponding react components.",
   "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/excelWithBusiness/webmobile-svg-library.git"
+  },
   "author": "Filtered",
   "main": "dist/index.js",
   "sideEffects": false,
@@ -70,5 +74,8 @@
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
+  },
+  "release": {
+    "branches": ["master"]
   }
 }
