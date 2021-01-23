@@ -1,6 +1,6 @@
 {
   "name": "webmobile-svg-library",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "A lib that holds all the SVGs and corresponding react components.",
   "license": "UNLICENSED",
   "author": "Filtered",
