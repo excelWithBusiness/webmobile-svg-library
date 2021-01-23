@@ -1,11 +1,16 @@
 {
-  "name": "@excelwithbusiness/webmobile-svg-library",
-  "version": "0.0.1",
+  "name": "webmobile-svg-library",
+  "version": "0.0.5",
   "description": "A lib that holds all the SVGs and corresponding react components.",
   "license": "UNLICENSED",
-  "sideEffects": false,
+  "author": "Filtered",
   "main": "dist/index.js",
-  "module": "dist/index.js",
+  "sideEffects": false,
+  "module": "dist/index",
+  "types": "dist/index",
+  "files": [
+    "/dist/**/*"
+  ],
   "scripts": {
     "build": "yarn clean && cross-env BABEL_ENV=build NODE_ENV=production run-p build:babel generate:dts",
     "build:babel": "babel  src --out-dir dist --config-file ./babel.config.js --source-maps --extensions .ts,.tsx,.js --no-comments",
