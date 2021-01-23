@@ -1,4 +1,4 @@
-# @excelwithbusiness/webmobile-lib-svg
+# @excelwithbusiness/webmobile-svg-library
 
 Provides all our SVGs as react components.
 
@@ -61,7 +61,7 @@ Thats it you can now use your svg react component :)
 
 ## Usage
 
-You can use a named import like `import { IconsMaterialArrow } from @excelwithbusiness/webmobile-lib-svg`.
+You can use a named import like `import { IconsMaterialArrow } from @excelwithbusiness/webmobile-svg-library`.
 
 ## What is under the hood
 
@@ -73,7 +73,7 @@ Based on the folder the worker decides on how to convert the svg. `common` SVGs 
 
 ```typescript
 import * as React from 'react'
-import { getSvgComponent } from '../../utils/GetSvgComponent'
+import getSvgComponent from '../../../src/utils/GetSvgComponent'
 
 export default getSvgComponent({
   filteredPaths: (
