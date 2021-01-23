@@ -12,13 +12,13 @@ You'd need to decide on which icon to use on the component level like so:
     case 'bookmark':
       return isFiltered ? <SvgBookmarkFiltered /> : <SvgBookmarkContent />
     case 'history':
-      return isFiltered ? <SvgHistoryFiltered /> : <SvgHistoryContent />
+      return isContent ? <SvgHistoryContent /> : <SvgHistoryFiltered />
     case 'home':
-      return isFiltered ? <SvgHomeFiltered /> : <SvgHomeContent />
+      return isDanone ? <SvgHomeDanone /> : <SvgHomeContent />
 ```
 
 These are just some loose icons. But we could have a different icon set for the content theme with a number of icons.
-One of these is e.g. the `Arrow` icon which would be used over 60 times, which would be 60 implemented if else cases:
+One of these is e.g. the `Arrow` icon which would be used over 20 times, which would be 20 implemented if else cases:
 
 ```html
 const isFiltered = useContext(ThemeContext)
@@ -55,7 +55,7 @@ Once you added your svg...
 Please keep in mind that the file name should be in **kebabe case** (e.g. `material-arrow.svg`).
 Then execute `yarn build:svg`. It will execute the buildComponents script and generate react components from the SVGs.
 
-The name of the react component depends on the folder and is converted to pascal case. E.g. if you added your `material-arrow.svg` into the folder in *svgs/common/icons*, it will be named `IconsMaterialArrow.tsx`. To have a smoother migration we export the icons from `webmobile-sc-components/src/svgs/index`.
+The name of the react component depends on the folder and is converted to pascal case. E.g. if you added your `material-arrow.svg` into the folder in *svgs/common/icons*, it will be named `IconsMaterialArrow.tsx`.
 
 Thats it you can now use your svg react component :)
 
@@ -71,7 +71,7 @@ Based on the folder the worker decides on how to convert the svg. `common` SVGs 
 
 `filtered` and `content` are combined into one component. This is done by extracting the paths and adding them into a `mustache` template which is basically a function that returns the svg react component. The output looks like this:
 
-```typescript
+```html
 import * as React from 'react'
 import getSvgComponent from '../../../src/utils/GetSvgComponent'
 
@@ -95,4 +95,4 @@ which renders a component that returns jsx with the path based on the product li
 
 ## Todos
 
-Eventually add product line support for logos / other if needed
+Eventually add product line support for logos / other if needed i.e Filtered, Danone, P&G, EHA etc

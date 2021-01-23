@@ -47,4 +47,14 @@ export { default as Illustration15 } from './illustration/Illustration15';
 export { default as Illustration16 } from './illustration/Illustration16';
 export { default as Illustration17 } from './illustration/Illustration17';
 export { default as Illustration18 } from './illustration/Illustration18';
+export { default as LogoFiltered } from './logo/LogoFiltered';
+export { default as LogoLogo } from './logo/LogoLogo';
+export { default as SocialFacebook } from './social/SocialFacebook';
+export { default as SocialFacebookAlt } from './social/SocialFacebookAlt';
+export { default as SocialInstagram } from './social/SocialInstagram';
+export { default as SocialInstagramAlt } from './social/SocialInstagramAlt';
+export { default as SocialTwitter } from './social/SocialTwitter';
+export { default as SocialTwitterAlt } from './social/SocialTwitterAlt';
+export { default as SocialYoutube } from './social/SocialYoutube';
+export { default as SocialYoutubeAlt } from './social/SocialYoutubeAlt';
 //# sourceMappingURL=index.d.ts.map
