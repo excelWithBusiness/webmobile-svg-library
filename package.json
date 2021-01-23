@@ -12,9 +12,9 @@
     "/dist/**/*"
   ],
   "scripts": {
-    "build": "yarn clean && cross-env BABEL_ENV=build NODE_ENV=production run-p build:babel generate:dts",
+    "build": "yarn clean && BABEL_ENV=build NODE_ENV=production run-p build:babel generate:dts",
     "build:babel": "babel  src --out-dir dist --config-file ./babel.config.js --source-maps --extensions .ts,.tsx,.js --no-comments",
-    "build:svg": "rimraf -rf ./src/components && cross-env UV_THREADPOOL_SIZE=64 babel-node --extensions .ts,.tsx,.js --config-file ./babel.config.js ./build.ts && yarn build",
+    "build:svg": "rimraf -rf ./src/components && UV_THREADPOOL_SIZE=64 babel-node --extensions .ts,.tsx,.js --config-file ./babel.config.js ./build.ts && yarn build",
     "clean": "rimraf -rf ./dist/*",
     "generate:dts": "tsc --project tsconfig.build.json",
     "lint:fix": "eslint 'src/**/*.{js,jsx,ts,tsx}' --fix",
