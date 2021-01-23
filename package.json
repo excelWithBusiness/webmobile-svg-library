@@ -1,6 +1,6 @@
 {
   "name": "webmobile-svg-library",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "A lib that holds all the SVGs and corresponding react components.",
   "license": "UNLICENSED",
   "author": "Filtered",
@@ -24,11 +24,11 @@
     "typecheck": "tsc"
   },
   "dependencies": {
+    "cross-env": "^5.2.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "styled-components": "^5.1.1",
     "rimraf": "^3.0.2",
-    "cross-env": "^5.2.0"
+    "styled-components": "^5.1.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.0.0",
