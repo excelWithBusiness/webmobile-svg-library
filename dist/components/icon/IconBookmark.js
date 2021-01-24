@@ -6,29 +6,11 @@ function SvgComponent(props) {
   return React.createElement("svg", _extends({
     width: 15,
     height: 18,
-    xmlns: "http://www.w3.org/2000/svg",
-    xmlnsXlink: "http://www.w3.org/1999/xlink"
-  }, props), React.createElement("defs", null, React.createElement("path", {
-    d: "M18.676 4.286v15.43L12.5 13.714l-6.176 6V4.285h12.352zm0-1.286H6.324C5.593 3 5 3.576 5 4.286v15.43c0 .519.323.987.817 1.186a1.352 1.352 0 001.442-.278l5.241-5.195 5.241 5.195c.379.367.948.477 1.442.278.494-.199.817-.667.817-1.187V4.285C20 3.576 19.407 3 18.676 3z",
-    id: "a"
-  })), React.createElement("g", {
-    transform: "translate(-5 -3)",
-    fill: "none",
-    fillRule: "evenodd"
-  }, React.createElement("mask", {
-    id: "b",
-    fill: "#fff"
-  }, React.createElement("use", {
-    xlinkHref: "#a"
-  })), React.createElement("use", {
-    fill: "#000",
-    xlinkHref: "#a"
-  }), React.createElement("g", {
-    mask: "url(#b)",
-    fill: "#999"
-  }, React.createElement("path", {
-    d: "M0 0h24v24H0z"
-  }))));
+    xmlns: "http://www.w3.org/2000/svg"
+  }, props), React.createElement("path", {
+    fill: "#999",
+    d: "M13.676 1.286v15.43L7.5 10.714l-6.176 6V1.285h12.352zm0-1.286H1.324C.593 0 0 .576 0 1.286v15.43c0 .519.323.987.817 1.186a1.352 1.352 0 001.442-.278L7.5 12.429l5.241 5.195c.379.367.948.477 1.442.278.494-.199.817-.667.817-1.187V1.285C15 .576 14.407 0 13.676 0z"
+  }));
 }
 
 const MemoSvgComponent = React.memo(SvgComponent);

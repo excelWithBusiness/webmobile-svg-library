@@ -54,7 +54,7 @@ export const getFileName = (svgName: string, outputFileDir: string) => {
  * @param data raw svg data
  */
 export async function extractPaths(data: string) {
-  const input = data.replace(/ fill="#F2F3F4"/g, '')
+  const input = data.replace(/ fill="#999999"/g, '')
   const result = await svgo.optimize(input)
 
   // Extract the paths from the svg string
@@ -92,28 +92,29 @@ export async function extractPaths(data: string) {
  * @param componentTemplate the mustache template
  */
 export const getProductLineComponent = async (
-  fileData: string,
-  outputFileDir: string,
-  svgPath: string,
-  componentTemplate: string
+    fileData: string,
+    outputFileDir: string,
+    svgPath: string,
+    componentTemplate: string
 ) => {
   const filteredExtractedPaths = await extractPaths(fileData)
   let contentExtractedPaths = null
-  // apply content path to the template if content icon exits
+  // apply saturn path to the template if saturn icon exits
   try {
-    const contentFilePath = svgPath.replace('/filtered/', '/content/')
-    const contentSvgExists = await fse.pathExists(contentFilePath)
-    if (contentSvgExists) {
-      const contentFileData = await fse.readFile(contentFilePath, { encoding: 'utf8' })
-      contentExtractedPaths = await extractPaths(contentFileData)
+    const seFilePath = svgPath.replace('/filtered/', '/content/')
+    const seSvgExists = await fse.pathExists(seFilePath)
+    if (seSvgExists) {
+      const seFileData = await fse.readFile(seFilePath, { encoding: 'utf8' })
+      contentExtractedPaths = await extractPaths(seFileData)
     }
   } catch (error) {
-    console.log('Content Svg could not be applied', error)
+    console.log('CONTENT Svg could not be applied', error)
   }
   contentExtractedPaths = contentExtractedPaths ? contentExtractedPaths : filteredExtractedPaths
 
   return render(componentTemplate, {
     filteredExtractedPaths,
+    contentExtractedPaths: contentExtractedPaths,
   })
 }
 

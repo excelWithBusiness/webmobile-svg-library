@@ -6,14 +6,10 @@ function SvgComponent(props) {
   return React.createElement("svg", _extends({
     width: 16,
     height: 16,
-    xmlns: "http://www.w3.org/2000/svg",
-    xmlnsXlink: "http://www.w3.org/1999/xlink"
-  }, props), React.createElement("defs", null, React.createElement("path", {
-    d: "M7.822 0a7.822 7.822 0 110 15.644A7.822 7.822 0 017.822 0zm0 1.422a6.4 6.4 0 100 12.8 6.4 6.4 0 000-12.8zm0 1.422c.393 0 .711.319.711.712v3.972l1.925 1.925a.711.711 0 11-1.005 1.005L7.319 8.325a.711.711 0 01-.208-.503V3.556c0-.393.318-.712.711-.712z",
-    id: "a"
-  })), React.createElement("use", {
+    xmlns: "http://www.w3.org/2000/svg"
+  }, props), React.createElement("path", {
     fill: "#999",
-    xlinkHref: "#a",
+    d: "M7.822 0a7.822 7.822 0 110 15.644A7.822 7.822 0 017.822 0zm0 1.422a6.4 6.4 0 100 12.8 6.4 6.4 0 000-12.8zm0 1.422c.393 0 .711.319.711.712v3.972l1.925 1.925a.711.711 0 11-1.005 1.005L7.319 8.325a.711.711 0 01-.208-.503V3.556c0-.393.318-.712.711-.712z",
     fillRule: "evenodd"
   }));
 }

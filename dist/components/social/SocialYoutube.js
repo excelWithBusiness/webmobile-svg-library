@@ -5,12 +5,13 @@ import * as React from 'react';
 function SvgComponent(props) {
   return React.createElement("svg", _extends({
     xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 0 24 24"
+    width: 24,
+    height: 24
   }, props), React.createElement("path", {
-    d: "M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+    d: "M19.615 3.184c-3.604-.246-11.631-.245-15.23 0C.488 3.45.029 5.804 0 12c.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0C23.512 20.55 23.971 18.196 24 12c-.029-6.185-.484-8.549-4.385-8.816zM9 16V8l8 3.993L9 16z"
   }));
 }
 
 const MemoSvgComponent = React.memo(SvgComponent);
 export default MemoSvgComponent;
-//# sourceMappingURL=SocialYoutube.js.map
+//# sourceMappingURL=SocialYouTube.js.map
