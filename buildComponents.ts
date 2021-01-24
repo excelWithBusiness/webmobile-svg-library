@@ -99,13 +99,13 @@ export const getProductLineComponent = async (
 ) => {
   const filteredExtractedPaths = await extractPaths(fileData)
   let contentExtractedPaths = null
-  // apply saturn path to the template if saturn icon exits
+  // apply content path to the template if content icon exits
   try {
-    const seFilePath = svgPath.replace('/filtered/', '/content/')
-    const seSvgExists = await fse.pathExists(seFilePath)
-    if (seSvgExists) {
-      const seFileData = await fse.readFile(seFilePath, { encoding: 'utf8' })
-      contentExtractedPaths = await extractPaths(seFileData)
+    const contentFilePath = svgPath.replace('/filtered/', '/content/')
+    const contentSvgExists = await fse.pathExists(contentFilePath)
+    if (contentSvgExists) {
+      const contentFileData = await fse.readFile(contentFilePath, { encoding: 'utf8' })
+      contentExtractedPaths = await extractPaths(contentFileData)
     }
   } catch (error) {
     console.log('CONTENT Svg could not be applied', error)
