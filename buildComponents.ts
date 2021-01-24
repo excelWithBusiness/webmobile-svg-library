@@ -54,7 +54,7 @@ export const getFileName = (svgName: string, outputFileDir: string) => {
  * @param data raw svg data
  */
 export async function extractPaths(data: string) {
-  const input = data.replace(/ fill="#F2F3F4"/g, '')
+  const input = data.replace(/ fill="#999999"/g, '')
   const result = await svgo.optimize(input)
 
   // Extract the paths from the svg string
@@ -92,10 +92,10 @@ export async function extractPaths(data: string) {
  * @param componentTemplate the mustache template
  */
 export const getProductLineComponent = async (
-  fileData: string,
-  outputFileDir: string,
-  svgPath: string,
-  componentTemplate: string
+    fileData: string,
+    outputFileDir: string,
+    svgPath: string,
+    componentTemplate: string
 ) => {
   const filteredExtractedPaths = await extractPaths(fileData)
   let contentExtractedPaths = null
@@ -108,12 +108,13 @@ export const getProductLineComponent = async (
       contentExtractedPaths = await extractPaths(contentFileData)
     }
   } catch (error) {
-    console.log('Content Svg could not be applied', error)
+    console.log('CONTENT Svg could not be applied', error)
   }
   contentExtractedPaths = contentExtractedPaths ? contentExtractedPaths : filteredExtractedPaths
 
   return render(componentTemplate, {
     filteredExtractedPaths,
+    contentExtractedPaths: contentExtractedPaths,
   })
 }
 

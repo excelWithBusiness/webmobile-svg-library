@@ -24,7 +24,7 @@ describe('Components builder', () => {
       svgFilter: 'mocks/svgs/*(common|filtered)/**/*.svg',
       outputDir: '',
       templateFile: 'ComponentTemplate.txt',
-      prettierConfigPath: '../../.prettierrc.js',
+      prettierConfigPath: '.prettierrc.js',
     }
     beforeEach(() => {
       options.outputDir = temp.mkdirSync()
