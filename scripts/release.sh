@@ -17,3 +17,6 @@ branch_name=${branch_name##refs/heads/}
 
 # push branch to origin
 git push --follow-tags origin $branch_name
+
+# release package
+git push --follow-tags origin master && npm publish
