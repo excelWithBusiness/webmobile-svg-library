@@ -1,6 +1,3 @@
-export { default as ButtonAddToPlaylist } from './button/ButtonAddToPlaylist'
-export { default as ButtonBookmark } from './button/ButtonBookmark'
-export { default as ButtonShare } from './button/ButtonShare'
 export { default as IconAddToPlaylist } from './icon/IconAddToPlaylist'
 export { default as IconArrow } from './icon/IconArrow'
 export { default as IconArrowDown } from './icon/IconArrowDown'
@@ -73,17 +70,23 @@ export { default as Illustration16 } from './illustration/Illustration16'
 export { default as Illustration17 } from './illustration/Illustration17'
 export { default as Illustration18 } from './illustration/Illustration18'
 export { default as IllustrationAchievement } from './illustration/IllustrationAchievement'
-export { default as IllustrationAnalyticsProcess } from './illustration/IllustrationAnalyticsProcess'
+export {
+  default as IllustrationAnalyticsProcess,
+} from './illustration/IllustrationAnalyticsProcess'
 export { default as IllustrationCharacter1 } from './illustration/IllustrationCharacter1'
 export { default as IllustrationCharacter2 } from './illustration/IllustrationCharacter2'
 export { default as IllustrationCharacter3 } from './illustration/IllustrationCharacter3'
 export { default as IllustrationDataAnalyzing } from './illustration/IllustrationDataAnalyzing'
 export { default as IllustrationDataAndSettings } from './illustration/IllustrationDataAndSettings'
 export { default as IllustrationDataMaintenance } from './illustration/IllustrationDataMaintenance'
-export { default as IllustrationDataOrganization } from './illustration/IllustrationDataOrganization'
+export {
+  default as IllustrationDataOrganization,
+} from './illustration/IllustrationDataOrganization'
 export { default as IllustrationDataProcessing } from './illustration/IllustrationDataProcessing'
 export { default as IllustrationDataStorage } from './illustration/IllustrationDataStorage'
-export { default as IllustrationHeroIllustration } from './illustration/IllustrationHeroIllustration'
+export {
+  default as IllustrationHeroIllustration,
+} from './illustration/IllustrationHeroIllustration'
 export { default as IllustrationInformationFlow } from './illustration/IllustrationInformationFlow'
 export { default as IllustrationInnovation } from './illustration/IllustrationInnovation'
 export { default as IllustrationJavascript } from './illustration/IllustrationJavascript'
@@ -109,12 +112,18 @@ export { default as StyleguideChat } from './styleguide/StyleguideChat'
 export { default as StyleguideChatOutlined } from './styleguide/StyleguideChatOutlined'
 export { default as StyleguideChatWithDots } from './styleguide/StyleguideChatWithDots'
 export { default as StyleguideCheckmarkCircle } from './styleguide/StyleguideCheckmarkCircle'
-export { default as StyleguideCheckmarkCircleOutlined } from './styleguide/StyleguideCheckmarkCircleOutlined'
+export {
+  default as StyleguideCheckmarkCircleOutlined,
+} from './styleguide/StyleguideCheckmarkCircleOutlined'
 export { default as StyleguideCheckmarkSquare } from './styleguide/StyleguideCheckmarkSquare'
-export { default as StyleguideCheckmarkSquareOutlined } from './styleguide/StyleguideCheckmarkSquareOutlined'
+export {
+  default as StyleguideCheckmarkSquareOutlined,
+} from './styleguide/StyleguideCheckmarkSquareOutlined'
 export { default as StyleguideClear } from './styleguide/StyleguideClear'
 export { default as StyleguideClearCircle } from './styleguide/StyleguideClearCircle'
-export { default as StyleguideClearCircleOutlined } from './styleguide/StyleguideClearCircleOutlined'
+export {
+  default as StyleguideClearCircleOutlined,
+} from './styleguide/StyleguideClearCircleOutlined'
 export { default as StyleguideClose } from './styleguide/StyleguideClose'
 export { default as StyleguideCollapseAll } from './styleguide/StyleguideCollapseAll'
 export { default as StyleguideColumnView } from './styleguide/StyleguideColumnView'
@@ -161,7 +170,9 @@ export { default as StyleguideStarOutlined } from './styleguide/StyleguideStarOu
 export { default as StyleguideThreeSixtyRotate } from './styleguide/StyleguideThreeSixtyRotate'
 export { default as StyleguideTime } from './styleguide/StyleguideTime'
 export { default as StyleguideTopSecurity } from './styleguide/StyleguideTopSecurity'
-export { default as StyleguideTopSecurityOutlined } from './styleguide/StyleguideTopSecurityOutlined'
+export {
+  default as StyleguideTopSecurityOutlined,
+} from './styleguide/StyleguideTopSecurityOutlined'
 export { default as StyleguideTwitter } from './styleguide/StyleguideTwitter'
 export { default as StyleguideTwitterAlt } from './styleguide/StyleguideTwitterAlt'
 export { default as StyleguideUser } from './styleguide/StyleguideUser'

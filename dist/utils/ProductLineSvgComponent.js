@@ -7,7 +7,7 @@ export const ProductLineSvgComponent = props => {
   } = useContext(ThemeContext);
   const pathProps = {
     Filtered: props.filteredPaths,
-    Content: props.danonePaths
+    Danone: props.danonePaths
   };
   return React.createElement("svg", {
     width: 32,

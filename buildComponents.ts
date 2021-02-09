@@ -66,6 +66,7 @@ export async function extractPaths(data: string) {
     .replace(/xlink:href=/g, 'xlinkHref=')
     .replace(/clip-rule=/g, 'clipRule=')
     .replace(/fill-rule=/g, 'fillRule=')
+    .replace(/fill=/g, 'fill=')
     .replace(/ clip-path=".+?"/g, '')
     .replace(/<clipPath.+?<\/clipPath>/g, '')
 
@@ -83,7 +84,7 @@ export async function extractPaths(data: string) {
 }
 
 /**
- * checks wether the icon exists for danone intelligence
+ * checks wether the icon exists for content intelligence
  * then renders the multi product line icon
  * if it does not exist it takes the filtered one (default)
  * @param fileData the raw svg data
@@ -98,23 +99,24 @@ export const getProductLineComponent = async (
     componentTemplate: string
 ) => {
   const filteredExtractedPaths = await extractPaths(fileData)
-  let contentExtractedPaths = null
-  // apply danone path to the template if danone icon exits
+  let danoneExtractedPaths = null
+  // apply content path to the template if content icon exits
   try {
-    const contentFilePath = svgPath.replace('/filtered/', '/danone/')
+    const contentFilePath = svgPath.replace('/filtered/', '/content/')
     const contentSvgExists = await fse.pathExists(contentFilePath)
     if (contentSvgExists) {
       const contentFileData = await fse.readFile(contentFilePath, { encoding: 'utf8' })
-      contentExtractedPaths = await extractPaths(contentFileData)
+      danoneExtractedPaths = await extractPaths(contentFileData)
     }
   } catch (error) {
     console.log('CONTENT Svg could not be applied', error)
   }
-  contentExtractedPaths = contentExtractedPaths ? contentExtractedPaths : filteredExtractedPaths
+
+  danoneExtractedPaths = danoneExtractedPaths ? danoneExtractedPaths : filteredExtractedPaths
 
   return render(componentTemplate, {
     filteredExtractedPaths,
-    contentExtractedPaths: contentExtractedPaths,
+    danoneExtractedPaths,
   })
 }
 
