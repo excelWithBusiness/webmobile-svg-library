@@ -79,7 +79,7 @@ export default getSvgComponent({
   filteredPaths: (
     <path d="somePath" />
   ),
-  contentPaths: (
+  danonePaths: (
     <path d="someOtherPath" />
   ),
 })

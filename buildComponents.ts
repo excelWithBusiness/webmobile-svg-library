@@ -83,7 +83,7 @@ export async function extractPaths(data: string) {
 }
 
 /**
- * checks wether the icon exists for content intelligence
+ * checks wether the icon exists for danone intelligence
  * then renders the multi product line icon
  * if it does not exist it takes the filtered one (default)
  * @param fileData the raw svg data
@@ -99,9 +99,9 @@ export const getProductLineComponent = async (
 ) => {
   const filteredExtractedPaths = await extractPaths(fileData)
   let contentExtractedPaths = null
-  // apply content path to the template if content icon exits
+  // apply danone path to the template if danone icon exits
   try {
-    const contentFilePath = svgPath.replace('/filtered/', '/content/')
+    const contentFilePath = svgPath.replace('/filtered/', '/danone/')
     const contentSvgExists = await fse.pathExists(contentFilePath)
     if (contentSvgExists) {
       const contentFileData = await fse.readFile(contentFilePath, { encoding: 'utf8' })

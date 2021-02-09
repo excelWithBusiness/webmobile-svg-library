@@ -5,11 +5,11 @@ import { ProductLineSvgComponent } from './ProductLineSvgComponent';
 
 const getSvgComponent = ({
   filteredPaths,
-  contentPaths
+  danonePaths
 }) => {
   const Component = props => React.createElement(ProductLineSvgComponent, _extends({}, props, {
     filteredPaths: filteredPaths,
-    contentPaths: contentPaths
+    danonePaths: danonePaths
   }));
 
   return React.memo(Component);
