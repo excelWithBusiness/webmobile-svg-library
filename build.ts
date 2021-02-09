@@ -10,7 +10,7 @@ export interface BuildOptions {
 
 const options: BuildOptions = {
   svgBaseDir: 'svgs',
-  svgFilter: 'svgs/*(common|filtered|content)/**/*.svg',
+  svgFilter: 'svgs/*(common|filtered)/**/*.svg',
   outputDir: 'src/components',
   templateFile: 'src/utils/ComponentTemplate.txt',
   prettierConfigPath: '.prettierrc.js',
