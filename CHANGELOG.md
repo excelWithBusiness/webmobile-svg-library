@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.16](https://github.com/excelWithBusiness/webmobile-svg-library/compare/v0.0.15...v0.0.16) (2021-02-09)
+
+
+### Bug Fixes
+
+* build issue with exports ([1130797](https://github.com/excelWithBusiness/webmobile-svg-library/commit/1130797f86579f5ce4e0356bb452163d88f3937b))
+
 ### [0.0.15](https://github.com/excelWithBusiness/webmobile-svg-library/compare/v0.0.14...v0.0.15) (2021-02-09)
 
 
