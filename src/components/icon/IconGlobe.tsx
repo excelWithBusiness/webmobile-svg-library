@@ -2,8 +2,8 @@ import * as React from 'react'
 
 function SvgComponent(props: React.SVGProps<SVGSVGElement>) {
   return (
-    <svg height={50} width={50} xmlns="http://www.w3.org/2000/svg" {...props}>
-      <path fill="none" d="M0 0h50v50H0z" />
+    <svg height={25} width={25} xmlns="http://www.w3.org/2000/svg" {...props}>
+      <path fill="none" d="M0 0h25v25H0z" />
       <circle
         cx={25}
         cy={25}
