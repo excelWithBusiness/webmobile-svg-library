@@ -29,7 +29,6 @@ export { default as IconEdit } from './icon/IconEdit';
 export { default as IconExpand } from './icon/IconExpand';
 export { default as IconFilter } from './icon/IconFilter';
 export { default as IconForwardSlash } from './icon/IconForwardSlash';
-export { default as IconGlobe } from './icon/IconGlobe';
 export { default as IconInfo } from './icon/IconInfo';
 export { default as IconInfoOutlined } from './icon/IconInfoOutlined';
 export { default as IconLaunch } from './icon/IconLaunch';
