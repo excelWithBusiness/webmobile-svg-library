@@ -11,7 +11,7 @@ function SvgComponent(props: React.SVGProps<SVGSVGElement>) {
         </style>
       </defs>
       <g id="Layer_2" data-name="Layer 2">
-        <g id="Layer_1-2" data-name="Layer 1">
+        <g id="Layer_1-2">
           <path
             className="cls-1"
             d="M210.24 386.05h-18.17M182.21 285.17h2.62A19.85 19.85 0 01204.68 305v72.27h-22.47z"

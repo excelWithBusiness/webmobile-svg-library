@@ -5,4 +5,3 @@ interface ProductLineSvgComponentProps {
 }
 declare const getSvgComponent: ({ filteredPaths, danonePaths }: ProductLineSvgComponentProps) => React.MemoExoticComponent<(props: React.SVGProps<SVGSVGElement>) => JSX.Element>;
 export default getSvgComponent;
-//# sourceMappingURL=GetSvgComponent.d.ts.map

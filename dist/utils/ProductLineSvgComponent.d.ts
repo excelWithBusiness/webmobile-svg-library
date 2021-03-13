@@ -5,4 +5,3 @@ interface ProductLineSvgComponentProps extends React.SVGProps<SVGSVGElement> {
 }
 export declare const ProductLineSvgComponent: (props: ProductLineSvgComponentProps) => JSX.Element;
 export {};
-//# sourceMappingURL=ProductLineSvgComponent.d.ts.map

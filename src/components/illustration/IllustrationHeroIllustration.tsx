@@ -31,7 +31,7 @@ function SvgComponent(props: React.SVGProps<SVGSVGElement>) {
           isolation: 'isolate',
         }}>
         <g id="Layer_2" data-name="Layer 2">
-          <g id="Layer_1-2" data-name="Layer 1">
+          <g id="Layer_1-2">
             <circle className="cls-3" cx={95.55} cy={16.9} r={16.6} />
             <circle className="cls-3" cx={180.5} cy={114.83} r={14.48} />
             <circle cx={47.83} cy={42.83} r={9.92} fill="#f107b3" opacity={0.18} />

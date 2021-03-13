@@ -169,4 +169,3 @@ export { default as StyleguideUserOutlined } from './styleguide/StyleguideUserOu
 export { default as StyleguideYouTube } from './styleguide/StyleguideYouTube';
 export { default as StyleguideYouTubeAlt } from './styleguide/StyleguideYouTubeAlt';
 export { default as StyleguideYoutubeOutlined } from './styleguide/StyleguideYoutubeOutlined';
-//# sourceMappingURL=index.d.ts.map

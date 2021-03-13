@@ -3,7 +3,6 @@ import * as React from 'react'
 function SvgComponent(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
-      data-name="Layer 1"
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
       viewBox="0 0 165.72 130.57"
