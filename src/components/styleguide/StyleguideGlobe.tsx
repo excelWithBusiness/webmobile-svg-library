@@ -15,7 +15,7 @@ export default getSvgComponent({
           <use xlinkHref="#a" />
         </mask>
         <use fill="#666" fillRule="nonzero" xlinkHref="#a" />
-        <g mask="url(#b)" fill="#666">
+        <g mask="url(#b)">
           <path d="M0 0h20v20H0z" />
         </g>
       </g>
