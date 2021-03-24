@@ -10,7 +10,7 @@ export default getSvgComponent({
           id="a"
         />
       </defs>
-      <use xlinkHref="#a" fillRule="evenodd" />
+      <use xlinkHref="#a" stroke-width="none" fillRule="evenodd" />
     </React.Fragment>
   ),
   danonePaths: (
@@ -21,7 +21,7 @@ export default getSvgComponent({
           id="a"
         />
       </defs>
-      <use xlinkHref="#a" fillRule="evenodd" />
+      <use xlinkHref="#a" stroke-width="none" fillRule="evenodd" />
     </React.Fragment>
   ),
 })
