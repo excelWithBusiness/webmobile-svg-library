@@ -3,8 +3,7 @@ import * as React from 'react'
 function SvgComponent(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
-      width={16}
-      height={16}
+      viewBox="0 0 16 16"
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
       {...props}>
@@ -14,7 +13,7 @@ function SvgComponent(props: React.SVGProps<SVGSVGElement>) {
           id="a"
         />
       </defs>
-      <use fill="#999" xlinkHref="#a" fillRule="evenodd" />
+      <use xlinkHref="#a" fillRule="evenodd" />
     </svg>
   )
 }
