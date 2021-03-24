@@ -10,14 +10,12 @@ export default getSvgComponent({
           id="a"
         />
       </defs>
-      <g fillRule="evenodd">
-        <mask id="b" fill="#fff">
-          <use xlinkHref="#a" />
-        </mask>
-        <use fill="#666" fillRule="nonzero" xlinkHref="#a" />
-        <g mask="url(#b)">
-          <path d="M0 0h20v20H0z" />
-        </g>
+      <mask id="b" fill="#fff">
+        <use xlinkHref="#a" />
+      </mask>
+      <use fill="#666" xlinkHref="#a" />
+      <g mask="url(#b)">
+        <path d="M0 0h20v20H0z" />
       </g>
     </React.Fragment>
   ),
@@ -29,14 +27,12 @@ export default getSvgComponent({
           id="a"
         />
       </defs>
-      <g fillRule="evenodd">
-        <mask id="b" fill="#fff">
-          <use xlinkHref="#a" />
-        </mask>
-        <use fill="#666" fillRule="nonzero" xlinkHref="#a" />
-        <g mask="url(#b)">
-          <path d="M0 0h20v20H0z" />
-        </g>
+      <mask id="b" fill="#fff">
+        <use xlinkHref="#a" />
+      </mask>
+      <use fill="#666" xlinkHref="#a" />
+      <g mask="url(#b)">
+        <path d="M0 0h20v20H0z" />
       </g>
     </React.Fragment>
   ),
