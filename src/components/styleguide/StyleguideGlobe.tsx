@@ -10,7 +10,7 @@ export default getSvgComponent({
           id="a"
         />
       </defs>
-      <g fill="none" fillRule="evenodd">
+      <g fillRule="evenodd">
         <mask id="b" fill="#fff">
           <use xlinkHref="#a" />
         </mask>
@@ -29,7 +29,7 @@ export default getSvgComponent({
           id="a"
         />
       </defs>
-      <g fill="none" fillRule="evenodd">
+      <g fillRule="evenodd">
         <mask id="b" fill="#fff">
           <use xlinkHref="#a" />
         </mask>

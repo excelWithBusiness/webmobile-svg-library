@@ -10,11 +10,11 @@ export default getSvgComponent({
           id="a"
         />
       </defs>
-      <g transform="translate(-2 -1)" fill="none" fillRule="evenodd">
+      <g transform="translate(-2 -1)" fillRule="evenodd">
         <mask id="b" fill="#fff">
           <use xlinkHref="#a" />
         </mask>
-        <use fill="#000" xlinkHref="#a" />
+        <use xlinkHref="#a" />
         <g mask="url(#b)">
           <path d="M0 0h24v24H0z" />
         </g>
@@ -29,11 +29,11 @@ export default getSvgComponent({
           id="a"
         />
       </defs>
-      <g transform="translate(-2 -1)" fill="none" fillRule="evenodd">
+      <g transform="translate(-2 -1)" fillRule="evenodd">
         <mask id="b" fill="#fff">
           <use xlinkHref="#a" />
         </mask>
-        <use fill="#000" xlinkHref="#a" />
+        <use xlinkHref="#a" />
         <g mask="url(#b)">
           <path d="M0 0h24v24H0z" />
         </g>
