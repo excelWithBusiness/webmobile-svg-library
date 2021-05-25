@@ -14,4 +14,4 @@ function SvgComponent(props) {
 
 const MemoSvgComponent = React.memo(SvgComponent);
 export default MemoSvgComponent;
-//# sourceMappingURL=SocialYouTube.js.map
+//# sourceMappingURL=SocialYoutube.js.map
