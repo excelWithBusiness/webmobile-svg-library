@@ -1,5 +1,6 @@
 export { default as ButtonAddToPlaylist } from './button/ButtonAddToPlaylist';
 export { default as ButtonBookmarkLarge } from './button/ButtonBookmarkLarge';
+export { default as ButtonPlay } from './button/ButtonPlay';
 export { default as ButtonShareLarge } from './button/ButtonShareLarge';
 export { default as IconAddToPlaylist } from './icon/IconAddToPlaylist';
 export { default as IconArrow } from './icon/IconArrow';
