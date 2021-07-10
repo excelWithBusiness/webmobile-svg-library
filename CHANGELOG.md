@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.55](https://github.com/excelWithBusiness/webmobile-svg-library/compare/v0.0.54...v0.0.55) (2021-07-10)
+
 ### [0.0.54](https://github.com/excelWithBusiness/webmobile-svg-library/compare/v0.0.53...v0.0.54) (2021-07-10)
 
 
