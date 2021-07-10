@@ -2,9 +2,11 @@ import * as React from 'react'
 
 function SvgComponent(props: React.SVGProps<SVGSVGElement>) {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" height={24} width={24} fill="#FFF" {...props}>
-      <path d="M0 0h24v24H0z" fill="none" />
-      <path d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20a2 2 0 002 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z" />
+    <svg width={24} height={24} fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
+      <path
+        d="M12 19a1 1 0 100-2 1 1 0 000 2zm5 0a1 1 0 100-2 1 1 0 000 2zm0-4a1 1 0 100-2 1 1 0 000 2zm-5 0a1 1 0 100-2 1 1 0 000 2zm7-12h-1V2a1 1 0 00-2 0v1H8V2a1 1 0 00-2 0v1H5a3 3 0 00-3 3v14a3 3 0 003 3h14a3 3 0 003-3V6a3 3 0 00-3-3zm1 17a1 1 0 01-1 1H5a1 1 0 01-1-1v-9h16v9zm0-11H4V6a1 1 0 011-1h1v1a1 1 0 002 0V5h8v1a1 1 0 002 0V5h1a1 1 0 011 1v3zM7 15a1 1 0 100-2 1 1 0 000 2zm0 4a1 1 0 100-2 1 1 0 000 2z"
+        fill="#999"
+      />
     </svg>
   )
 }
