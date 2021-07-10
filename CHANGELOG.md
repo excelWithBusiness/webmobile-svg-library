@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.54](https://github.com/excelWithBusiness/webmobile-svg-library/compare/v0.0.53...v0.0.54) (2021-07-10)
+
+
+### Features
+
+* **timeslot strategy:** [MAG-2978] - update the calendar icon and add it plus circle icon to styleguides ([#22](https://github.com/excelWithBusiness/webmobile-svg-library/issues/22)) ([2b236a8](https://github.com/excelWithBusiness/webmobile-svg-library/commit/2b236a8a6744359a45cba1ad8cad19d936ca34ef))
+
 ### [0.0.53](https://github.com/excelWithBusiness/webmobile-svg-library/compare/v0.0.52...v0.0.53) (2021-07-08)
 
 ### [0.0.52](https://github.com/excelWithBusiness/webmobile-svg-library/compare/v0.0.51...v0.0.52) (2021-07-08)
