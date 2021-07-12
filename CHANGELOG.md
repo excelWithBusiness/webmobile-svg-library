@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.57](https://github.com/excelWithBusiness/webmobile-svg-library/compare/v0.0.56...v0.0.57) (2021-07-12)
+
+
+### Features
+
+* **timeslot strategy:** [MAG-2978] - update style guide and component with live label svg ([#23](https://github.com/excelWithBusiness/webmobile-svg-library/issues/23)) ([09d69eb](https://github.com/excelWithBusiness/webmobile-svg-library/commit/09d69eb7f536f194825d3a7d55e927b6f981e0ef))
+
 ### [0.0.56](https://github.com/excelWithBusiness/webmobile-svg-library/compare/v0.0.55...v0.0.56) (2021-07-10)
 
 ### [0.0.55](https://github.com/excelWithBusiness/webmobile-svg-library/compare/v0.0.54...v0.0.55) (2021-07-10)
